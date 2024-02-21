@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -40,12 +36,66 @@
 
 /* -------------Home Page---------------- */
 
-#banner{
-  width: 100%;
-  height: 500px;
-}
 
 .home img{
   height: 35vh;
   width: 80%;
+}
+
+/* -------------Home Page---------------- */
+/* -------------About Page---------------- */
+
+.cards{
+  padding: 0px 0px !important;
+}
+
+.cards img{
+  width: max-content;
+  height: 400px;
+}
+
+.card-description{
+  text-align: left;
+}
+
+/* -------------About Page---------------- */
+/* -------------Contact Page---------------- */
+
+form{
+  /* border: 1px solid red; */
+  box-shadow:  2px 2px 5px #333333, -2px -2px 5px #888888;
+}
+
+form input{
+  height: 50px;
+  border-radius: 10px;
+}
+
+form label{
+  display: flex;
+  justify-content: left;
+  font-weight: 500;
+  color: white;
+}
+
+.errors{
+  color: red;
+}
+
+.forms-bg{
+  background-image: url(assets/images/contact-img.jpg);
+
+}
+/* -------------Contact Page---------------- */
+/* -------------Menu Page---------------- */
+.menu img{
+  width: 100%;
+}
+
+
+/* -------------Menu Page---------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
