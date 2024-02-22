@@ -71,7 +71,7 @@ form input{
   border-radius: 10px;
 }
 
-form label{
+.Contact label{
   display: flex;
   justify-content: left;
   font-weight: 500;
@@ -94,6 +94,16 @@ form label{
 
 
 /* -------------Menu Page---------------- */
+/* -------------Login Page---------------- */
+
+.login label{
+  display: flex;
+  justify-content: left;
+  font-weight: 500;
+  color: black;
+}
+
+/* -------------Login Page---------------- */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

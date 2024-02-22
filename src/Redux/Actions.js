@@ -16,8 +16,26 @@ export const Decrement = (id) => {
     }
 }
 
+export const loggedStatus = (isLoggedIn, userData) => {
+    return {
+        type: "loggedStatus",
+        payload: {
+            isLoggedIn,
+            userData,
+        }
+    }
+}
+
+export const clearLoggedData = () => {
+    return {
+        type: "ClearLoggedData",
+    };
+};
+
 const Actions = {
     Increment,
-    Decrement
+    Decrement,
+    loggedStatus,
+    clearLoggedData,
 };
 export default Actions;

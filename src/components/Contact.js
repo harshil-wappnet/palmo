@@ -25,9 +25,9 @@ function Contact() {
         }
     });
     return (
-        <div className="my-4 forms-bg">
+        <div className="forms-bg">
             <h3 className='text-white'> Reserve Fine Dine at our Restaurant</h3>
-            <form onSubmit={formik.handleSubmit} className='container align-items-center d-flex flex-column p-5 mt-3 rounded'>
+            <form onSubmit={formik.handleSubmit} className='container align-items-center d-flex flex-column p-5 mt-3 rounded Contact'>
                 <div className="col-md-4 mb-3 d-flex flex-column">
                     <label htmlFor="name" className='align-content-left'>Name : </label>
                     <input
@@ -38,7 +38,7 @@ function Contact() {
                         value={formik.values.name}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur} />
-                    {formik.touched.name && formik.errors.name ? (<div className='errors'>{formik.errors.name}</div>) : null}<br /><br />
+                    {formik.touched.name && formik.errors.name ? (<div className='errors'>{formik.errors.name}</div>) : null}<br />
                 </div>
                 <div className="col-md-4 mb-3 d-flex flex-column">
                     <label htmlFor="email">Email : </label>

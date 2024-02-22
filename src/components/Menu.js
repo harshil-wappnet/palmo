@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { Increment, Decrement } from "../Redux/Actions"
 function Menu() {
-    const itemCounts = useSelector(state => state.itemCounts);
+    const itemCounts = useSelector(state => state.count.itemCounts);
     const dispatch = useDispatch();
     const itemsPerPage = 6;
     const [currentPage, setCurrentPage] = useState(1);

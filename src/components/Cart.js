@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 function Cart() {
-    const itemCounts = useSelector(state => state.itemCounts);
+    const itemCounts = useSelector(state => state.count.itemCounts);
 
     // Calculate the total quantity by summing up individual item counts
     const totalQuantity = Object.values(itemCounts).reduce((total, count) => total + count, 0);
